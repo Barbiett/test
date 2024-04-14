@@ -4,21 +4,174 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>crazy-hunters-js-project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <load ="partials/header.html" />
+    <main>
+      <section class="projects-section" id="projects">
+        <h2 class="projects-title">Projects</h2>
+        <div class="swiper">
+          <ul class="projects-list swiper-wrapper">
+            <li class="projects-item swiper-slide">
+              <div class="projects-info-wrapper">
+                <div class="projects-skills">
+                  <div class="projects-skill"><p>#react</p></div>
+                  <div class="projects-skill"><p>#js</p></div>
+                  <div class="projects-skill"><p>#node js</p></div>
+                  <div class="projects-skill"><p>#git</p></div>
+                </div>
+                <h3>
+                  Programming Across Borders: Ideas, Technologies, Innovations
+                </h3>
+                <a
+                  class="projects-link"
+                  href="https://github.com/tina3008/project-group-3"
+                  target="_blank"
+                  >See project</a
+                >
+              </div>
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
+              <div class="projects-img-wrapper">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/project-image-one-tablet.jpg    1x,
+                      ./img/project-image-one-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./img/project-image-one-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="project-image"
+                    src="./img/project-image-one-mobile.jpg"
+                    alt="project-photo"
+                  />
+                </picture>
+              </div>
+            </li>
+            <li class="projects-item swiper-slide">
+              <div class="projects-info-wrapper">
+                <div class="projects-skills">
+                  <div class="projects-skill"><p>#react</p></div>
+                  <div class="projects-skill"><p>#js</p></div>
+                  <div class="projects-skill"><p>#node js</p></div>
+                  <div class="projects-skill"><p>#git</p></div>
+                </div>
+                <h3>
+                  Programming Across Borders: Ideas, Technologies, Innovations
+                </h3>
+                <a
+                  class="projects-link"
+                  href="https://github.com/tina3008/project-group-3"
+                  target="_blank"
+                  >See project</a
+                >
+              </div>
+              <div class="projects-img-wrapper">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/project-image-two-tablet.jpg    1x,
+                      ./img/project-image-two-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./img/project-image-two-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="project-image"
+                    src="./img/project-image-two-mobile.jpg"
+                    alt="project-photo"
+                  />
+                </picture>
+              </div>
+            </li>
+            <li class="projects-item swiper-slide">
+              <div class="projects-info-wrapper">
+                <div class="projects-skills">
+                  <div class="projects-skill"><p>#react</p></div>
+                  <div class="projects-skill"><p>#js</p></div>
+                  <div class="projects-skill"><p>#node js</p></div>
+                  <div class="projects-skill"><p>#git</p></div>
+                </div>
+                <h3>
+                  Programming Across Borders: Ideas, Technologies, Innovations
+                </h3>
+                <a
+                  class="projects-link"
+                  href="https://github.com/tina3008/project-group-3"
+                  target="_blank"
+                  >See project</a
+                >
+              </div>
+              <div class="projects-img-wrapper">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/project-image-one-tablet.jpg    1x,
+                      ./img/project-image-one-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./img/project-image-one-mobile@2x.jpg 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="project-image"
+                    src="./img/project-image-one-mobile.jpg"
+                    alt="project-photo"
+                  />
+                </picture>
+              </div>
+            </li>
+          </ul>
+          <div class="btn-container">
+            <button class="prev-btn" type="button">
+              <svg
+                class="arrow-left-icon"
+                width="24"
+                height="24"
+                aria-label="arrow left"
+              >
+                <use
+                  href="./img/projects/arrow-right-icon.svg#icon-arrow-narrow-right"
+                />
+              </svg>
+            </button>
+            <button class="next-btn" type="button">
+              <svg
+                class="arrow-right-icon"
+                width="24"
+                height="24"
+                aria-label="arrow right"
+              >
+                <use
+                  href="./img/projects/arrow-right-icon.svg#icon-arrow-narrow-right"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
